@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content with Menu</title>
+    <link rel="stylesheet" href="step_3.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Grades and forms</h1>
+    </header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="#feedback-form">Feedback Form</a></li>
+            <li><a href="#student-grades">Student Grades</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div id="feedback-form">
+            <h2 class="form-title">Feedback Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="role">Your Role:</label>
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <div class="radio-options">
+                    <p>Would you recommend us?</p>
+                    <div class="radio-options">
+                          <label>
+                          <input type="radio" name="recommend" value="yes">
+                          Yes
+                          </label>
+                          <label>
+                          <input type="radio" name="recommend" value="no">
+                          No
+                          </label>
+                    </div>
+                </div>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="student-grades">
+            <h2 style="text-align: center; color: #1a3c63; margin-top: 40px; margin-bottom: 20px; font-weight: 600;">Student Grades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beknazar</td>
+                        <td>Physical Education</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Dinmukhammed</td>
+                        <td>Calculus</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Miras</td>
+                        <td>Introduction to Programmig</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Average Grade</td>
+                        <td>4.6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Not My First Website</p>
+    </footer>
+
+</body>
+</html>
